@@ -23,6 +23,6 @@ Launch the project :
 - cd libasm
 - make
 - ./a.out
-- Write the same sentence twice in your terminal, for example "This is a test". This sentence will be used for the strdup test
+- Write the same sentence twice in your terminal, for example “This is a test”. This sentence will be used for the ft_read and ft_write tests
 
 Enjoy
