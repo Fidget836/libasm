@@ -122,7 +122,7 @@ int main()
 	printf("FT_STRDUP: %s\n", ft_strdup("Ceci est une tres longue phrase pour faire un exemple"));
 
 	printf("STRDUP: %s\n", strdup(""));
-	printf("FT_STRDUP: %s\n", ft_strdup("test"));
+	printf("FT_STRDUP: %s\n", ft_strdup(""));
 
 	return (0);
 }
