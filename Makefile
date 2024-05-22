@@ -9,7 +9,7 @@ SRCS = 	ft_strlen.s		\
 		ft_read.s		\
 		ft_strdup.s		\
 
-CC = gcc -Wall -Werror -Wextra
+CC = gcc
 ASM = nasm -f elf64
 
 OBJS = ${SRCS:.s=.o}
@@ -20,7 +20,7 @@ ${NAME}: ${OBJS}
 	ar rcs ${NAME} ${OBJS} 
 
 ${EXEC}: ${NAME}
-	${CC} main.c ${NAME} -o ${EXEC} -no-pie
+	${CC} main.c ${NAME} -o ${EXEC}
 
 .s.o:
 	${ASM} -o $@ $?

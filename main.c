@@ -21,6 +21,7 @@ int main()
 	char src1[] = "Hello World !";
 	char src2[] = "Ceci est un test";
 	char src3[] = "";
+	char src4[] = "Hello World !!!";
 	char dest1[50];
 	char dest2[50];
 	printf("/***** FT_STRCPY *****/\n");
@@ -59,6 +60,14 @@ int main()
 	printf("STRCMP : %d\n", strcmp(src1, src3));
 	printf("FT_STRCMP : %ld\n\n", ft_strcmp(src1, src3));
 
+		printf("S1 :%s ||| S2 : %s\n", src1, src4);
+	printf("STRCMP : %d\n", strcmp(src1, src4));
+	printf("FT_STRCMP : %ld\n\n", ft_strcmp(src1, src4));
+
+		printf("S1 :%s ||| S2 : %s\n", src4, src1);
+	printf("STRCMP : %d\n", strcmp(src4, src1));
+	printf("FT_STRCMP : %ld\n\n", ft_strcmp(src4, src1));
+
 
 	/***** FT_WRITE && FT_READ*****/
 	printf("/***** FT_WRITE && FT_READ *****/\n");
@@ -95,7 +104,7 @@ int main()
         printf("Ft_read success: %ld bytes read\n", bytesFtRead);
     }
 
-	    // Write to stdout (should work)
+	// Write to stdout (should work)
     bytesFtWritten = ft_write(1, bufferFtWrite, bytesRead);
     if (bytesFtWritten < 0) {
         perror("Ft_write failed");
@@ -113,7 +122,7 @@ int main()
 	printf("FT_STRDUP: %s\n", ft_strdup("Ceci est une tres longue phrase pour faire un exemple"));
 
 	printf("STRDUP: %s\n", strdup(""));
-	printf("FT_STRDUP: %s\n", ft_strdup(""));
+	printf("FT_STRDUP: %s\n", ft_strdup("test"));
 
 	return (0);
 }
