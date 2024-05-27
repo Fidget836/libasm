@@ -9,7 +9,7 @@ SRCS = 	ft_strlen.s		\
 		ft_read.s		\
 		ft_strdup.s		\
 
-CC = gcc
+CC = gcc -Wall -Werror -Wextra
 ASM = nasm -f elf64
 
 OBJS = ${SRCS:.s=.o}

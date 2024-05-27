@@ -123,6 +123,6 @@ int main()
 
 	printf("STRDUP: %s\n", strdup(""));
 	printf("FT_STRDUP: %s\n", ft_strdup(""));
-
+	
 	return (0);
 }
